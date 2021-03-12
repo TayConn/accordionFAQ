@@ -1,0 +1,138 @@
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(to bottom, #af67e9, #6565e7);
+  min-height: 100vh;
+  overflow: auto;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem 0;
+}
+
+.faqCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  width: 75%;
+  height: auto;
+  z-index: -3;
+  -webkit-box-shadow: 2px 2px 50px rbga(0, 0, 0, 0.35);
+          box-shadow: 2px 2px 50px rbga(0, 0, 0, 0.35);
+}
+
+.faqQues {
+  font-size: .87rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faqQues img {
+  max-height: 100%;
+  padding: 1.25rem 0;
+}
+
+.faqAnsw {
+  font-size: .75rem;
+  line-height: 1.125rem;
+}
+
+.faqText {
+  margin: 3rem;
+}
+
+.divide {
+  margin: 15px 0px;
+  border-top: 1px solid #e7e7e9;
+}
+
+.illustration {
+  line-height: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.illus-block {
+  position: relative;
+  z-index: 0;
+}
+
+.illus-woman {
+  background-image: url(images/illustration-woman-online-desktop.svg);
+  width: 100%;
+  height: 400px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.illus-bg {
+  background: url(/images/bg-pattern-desktop.svg);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  left: -32%;
+  z-index: -2;
+}
+
+.illus-bg-mobile {
+  background: url(./images/bg-pattern-mobile.svg);
+  width: 100%;
+  height: 135px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
