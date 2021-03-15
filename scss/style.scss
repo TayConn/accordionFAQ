@@ -9,6 +9,7 @@ $blue: hsl(240, 73%, 65%);
 $darkerGreyBlue: hsl(237, 12%, 33%);
 $darkGreyBlue: hsl(240, 6%, 50%);
 $darkDesatBlue: hsl(238, 29%, 16%);
+$orange: hsl(14, 88%, 65%);
 
 //Divider Colors
 $lightGreyBlue: hsl(240, 5%, 91%);
@@ -129,6 +130,10 @@ h1{
     border-top: 1px solid $lightGreyBlue;
   }
 
+  .accordion_collapse{
+      display: none;
+  }
+
 @media (min-width: 900px){
     body{
         padding: 0;
@@ -148,8 +153,8 @@ h1{
         background-size: 25rem;
         background-position: -13% center;
         padding: 4.375 6.25rem 4.375rem 0;
-        
     }
+
     .card_box{
         display: block;
         position: absolute;
@@ -185,10 +190,13 @@ h1{
         font-family: $primaryFont;
         padding: 2rem 6rem 2rem 0;
     }
+
     .accordion_content{
         font-size: .75rem;
         line-height: 1.4rem;
         margin-bottom: 1rem;
+        display: none;
+        transition: max-height 0.2s ease-out;
     }
 
     .accordion_item{
@@ -202,9 +210,6 @@ h1{
             margin-bottom: 0;
         }
 
-        .open{
-            font-weight: bold;
-        }
     }
 
     .accordion_question{
@@ -220,6 +225,12 @@ h1{
         text-align: left;
         width: 100%;
     }
+
+    .accordion_question:hover{
+        color: $orange;
+    }
+
+
 
     .illustration, .faqText {
         flex: 1;

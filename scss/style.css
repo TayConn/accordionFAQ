@@ -138,6 +138,10 @@ h1 {
   border-top: 1px solid #e7e7e9;
 }
 
+.accordion_collapse {
+  display: none;
+}
+
 @media (min-width: 900px) {
   body {
     padding: 0;
@@ -208,6 +212,9 @@ h1 {
     font-size: .75rem;
     line-height: 1.4rem;
     margin-bottom: 1rem;
+    display: none;
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
   }
   .accordion_item {
     display: -webkit-box;
@@ -223,9 +230,6 @@ h1 {
   }
   .accordion_item h2 {
     margin-bottom: 0;
-  }
-  .accordion_item .open {
-    font-weight: bold;
   }
   .accordion_question {
     display: -webkit-box;
@@ -245,6 +249,9 @@ h1 {
     margin-bottom: 1rem;
     text-align: left;
     width: 100%;
+  }
+  .accordion_question:hover {
+    color: #f47c57;
   }
   .illustration, .faqText {
     -webkit-box-flex: 1;
