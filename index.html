@@ -11,92 +11,70 @@
 </head>
 <body>
 
-  <section class="container">
-    <div class="faqCard">
-        <div class="illustration">
-          <img class="illus-block" src="images/illustration-box-desktop.svg" alt="a cartoon box">
-          <div class="illus-woman"></div>
-          <div class="illus-bg"></div>
+  
+  <section class="card">
+    <img src="/images/illustration-box-desktop.svg" alt="card box" class="card_box">
+        <div class="card_image">
+          <img src="/images/illustration-woman-online-desktop.svg" alt="woman online desktop">
         </div>
-        
-      
       <div class="faqText">
         <H1>FAQ</H1>
-        <div class="faqSect">
-          <div class="faqQues">
-            <p>
-              How many team members can I invite?
-            </p>
-            <img src="images/icon-arrow-down.svg" alt="an orance down arrow icon">
-          </div>
-          <div class="faqAnsw">
-            <p>
-              You can invite up to 2 additional users on the Free plan. There is no limit on 
+        <div class="accordion">
+          <div class="accordion_item">
+            <h2>
+              <button class="accordion_question open">How many team members can I invite?</button>
+            </h2>
+            <div class="accordion_collapse">
+              <div class="accordion_content">
+                You can invite up to 2 additional users on the Free plan. There is no limit on 
               team members for the Premium plan.
-            </p>
-          </div>
+              </div>
+            </div>
         </div>
-        <div class="divide"></div>
-        <div class="faqSect">
-          <div class="faqQues">
-            <p>
-              What is the maximum file upload size?
-            </p>
-            <img src="images/icon-arrow-down.svg" alt="an orance down arrow icon">
-          </div>
-          <div class="faqAnsw">
-            <p>
+        <div class="accordion_item">
+          <h2>
+            <button class="accordion_question open">What is the maximum file upload size?</button>
+          </h2>
+          <div class="accordion_collapse">
+            <div class="accordion_content">
               No more than 2GB. All files in your account must fit your allotted storage space.
-            </p>
+            </div>
+          </div>
+      </div>
+      <div class="accordion_item">
+        <h2>
+          <button class="accordion_question open">How do I reset my password?</button>
+        </h2>
+        <div class="accordion_collapse">
+          <div class="accordion_content">
+            Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
           </div>
         </div>
-        <div class="divide"></div>
-        <div class="faqSect">
-          <div class="faqQues">
-            <p>
-              How do I reset my password?
-            </p>
-            <img src="images/icon-arrow-down.svg" alt="an orance down arrow icon">
-          </div>
-          <div class="faqAnsw">
-            <p>
-              Click “Forgot password” from the login page or “Change password” from your profile page.
-            </p>
-            <p>
-              A reset link will be emailed to you.
-            </p>
-          </div>
-        </div>
-        <div class="divide"></div>
-        <div class="faqSect">
-          <div class="faqQues">
-            <p>
-              Can I cancel my subscription?
-            </p>
-            <img src="images/icon-arrow-down.svg" alt="an orance down arrow icon">
-          </div>
-          <div class="faqAnsw">
-            <p>
-              Yes! Send us a message and we’ll process your request no questions asked.
-            </p>
-          </div>
-        </div>
-        <div class="divide"></div>
-        <div class="faqSect">
-          <div class="faqQues">
-            <p>
-              Do you provide additional support?
-            </p>
-            <img src="images/icon-arrow-down.svg" alt="an orance down arrow icon">
-          </div>
-          <div class="faqAnsw">
-            <p>
-              Chat and email support is available 24/7. Phone lines are open during normal business hours.
-            </p>
-          </div>
+    </div>
+    <div class="accordion_item">
+      <h2>
+        <button class="accordion_question open">Can I cancel my subscription?</button>
+      </h2>
+      <div class="accordion_collapse">
+        <div class="accordion_content">
+          Yes! Send us a message and we’ll process your request no questions asked.
         </div>
       </div>
+  </div>
+  <div class="accordion_item">
+    <h2>
+      <button class="accordion_question open">Do you provide additional support?</button>
+    </h2>
+    <div class="accordion_collapse">
+      <div class="accordion_content">
+        Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      </div>
     </div>
+  </div>
+        <!-- <div class="divide"></div>
+        <div class="divide"></div>
+        <div class="divide"></div>
+        <div class="divide"></div> -->
   </section>
 
   <div class="attribution">
