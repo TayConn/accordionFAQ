@@ -92,7 +92,7 @@ question.forEach(question => {
 
 ### Continued development
 
-My most important goal right now is expanding my understanding an depth of Javascript.
+My most important goal right now is expanding my knowledge of Javascript.
 
 ### Useful resources
 
@@ -101,6 +101,6 @@ My most important goal right now is expanding my understanding an depth of Javas
 
 ## Author
 
-- Website - [Taylor Conn](tayconn.github.io)
+- Website - [Taylor Conn](https://tayconn.github.io)
 - Frontend Mentor - [@gdsslight](https://www.frontendmentor.io/profile/gdsslight)
 
