@@ -28,21 +28,13 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Hide/Show the answer to a question when the question is clicked
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![](./desktop_screenshot.jpg) ![](./mobile_screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -50,63 +42,67 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS/Sass custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Vanilla Javascript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Using button elements as JS targets that change sibling elements inside them after clicking was a new task for me. Another "aha!" moment was figuing out how to also have the arrow indicator flip after a FAQ item dropped down.
 
-To see how you can add code snippets, see below:
+Aligning the illustrations proved to be a bit of a puzzle, but making the shadow line image a background image then positioning the desktop and mobile version of the image of the woman over it with a class using translates and positioning, then layering the box over them with a z-index was a great work-around.
+
+Here are some code snippets that I'm proud of:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="accordion_item">
+  <button class="accordion_question">How many team members can I invite?<span class="arrow"><img src="./images/icon-arrow-down.svg" alt="An orange arrow symbol"></span>
+  </button>
+    <p class="accordion_content">
+      You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+    </p>
+</div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.open .accordion_question{
+    font-weight: 600;
+}
+ 
+.open .accordion_content{
+    display: block;
+}
+
+.open .arrow{
+    transform: rotate(180deg);
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+question.forEach(question => {
+        question.addEventListener('click', (e) => {
+            const faqItem = e.currentTarget.closest('.accordion_item');
+            item.forEach(item => {
+                if (item != faqItem) {
+                    item.classList.remove('open')
+                }
+            })
+            faqItem.classList.toggle('open')
+        })
+    })
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+My most important goal right now is expanding my understanding an depth of Javascript.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resource 1](https://getbootstrap.com/docs/5.0/components/accordion/) - I started building my accordion based off of this boostrap version.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Taylor Conn](tayconn.github.io)
+- Frontend Mentor - [@gdsslight](https://www.frontendmentor.io/profile/gdsslight)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
