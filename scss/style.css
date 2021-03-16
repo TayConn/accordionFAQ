@@ -95,12 +95,6 @@ h1 {
   margin-bottom: .5rem;
 }
 
-.accordion_content {
-  font-size: .75rem;
-  line-height: 1.125rem;
-  margin-bottom: .5rem;
-}
-
 .accordion_question {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +114,11 @@ h1 {
   margin-top: 0;
   text-align: left;
   width: 100%;
+  font-weight: 300;
+}
+
+.accordion_question:hover {
+  color: #f47c57;
 }
 
 .accordion_question::after {
@@ -130,23 +129,17 @@ h1 {
   background-position: center;
   display: block;
   width: 1rem;
-  height: .625rem;
+  height: .5rem;
 }
 
-.divide {
-  margin: 15px 0px;
-  border-top: 1px solid #e7e7e9;
-}
-
-.accordion_collapse {
-  display: none;
+.accordion_content {
+  font-size: .75rem;
+  font-weight: 300;
+  line-height: .75rem;
+  margin-bottom: .5rem;
 }
 
 @media (min-width: 900px) {
-  body {
-    padding: 0;
-    color: #1d1e35;
-  }
   h1, h2, h3 {
     margin-top: 0;
   }
@@ -161,8 +154,8 @@ h1 {
             flex-flow: row nowrap;
     margin: 6rem auto;
     background-image: url(/images/bg-pattern-desktop.svg);
-    background-size: 25rem;
-    background-position: -13% center;
+    background-size: 50rem;
+    background-position: -400% 60%;
     padding: 4.375 6.25rem 4.375rem 0;
   }
   .card_box {
@@ -191,7 +184,7 @@ h1 {
     overflow: hidden;
     width: 100%;
     height: auto;
-    max-width: 25rem;
+    max-width: 45rem;
   }
   .faqText {
     display: -webkit-box;
@@ -204,13 +197,12 @@ h1 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding: 1rem;
     font-family: "Kumbh Sans", sans-serif;
-    padding: 2rem 6rem 2rem 0;
+    padding: 2rem 4.5rem 2rem 0;
   }
   .accordion_content {
     font-size: .75rem;
-    line-height: 1.4rem;
+    line-height: 1.25rem;
     margin-bottom: 1rem;
     display: none;
     -webkit-transition: max-height 0.2s ease-out;
@@ -246,12 +238,9 @@ h1 {
     padding: 0;
     font-size: .875rem;
     font-family: "Kumbh Sans", sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     text-align: left;
     width: 100%;
-  }
-  .accordion_question:hover {
-    color: #f47c57;
   }
   .illustration, .faqText {
     -webkit-box-flex: 1;
