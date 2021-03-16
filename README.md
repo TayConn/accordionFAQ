@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [View live on Vercel](https://accordian-faq-eta.vercel.app/)
 
 ## My process
 
