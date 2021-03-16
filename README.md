@@ -14,7 +14,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
